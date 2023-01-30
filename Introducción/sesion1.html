@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <!-- CONFIGURAR LA PAGINA WEB -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta keywords="veteranaria, barcelona, gatos, perros">
+
+   <title>PRIMERA SESION DE CLASES</title>
+</head>
+
+<body>
+   <h1 id="principal">PRESENTACIÓN</h1>
+
+   <p>Mi nombre <input type="text" id="nombre"/></p>
+   <p>y trabajo como <input type="text" id="oficio"/></p>
+   <button onclick="mostrar()">DECIR HOLA</button> 
+   <p id="miNombre"></p>
+   <p id="miOficio"></p>
+
+
+   <script>   
+      function mostrar() {
+         document.getElementById("miNombre").innerHTML = "Hola, me llamo " + document.getElementById("nombre").value;
+         document.getElementById("miOficio").innerHTML = "Soy " + document.getElementById("oficio").value;
+      }
+   </script>
+</body>
+
+</html>

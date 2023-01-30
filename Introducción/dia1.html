@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="">
+    <title>Introducción | Dia 1</title>
+</head>
+<body>
+    <h1 id="principal">Titulo</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit illum, similique explicabo corporis quos aperiam atque cum assumenda eveniet excepturi sunt doloribus exercitationem iste eos cumque sapiente mollitia possimus laboriosam veniam. Quo laboriosam ab voluptatem. Distinctio aspernatur, expedita dignissimos minima corrupti sit vitae nobis earum incidunt, iure architecto error ipsa!</p>
+    <p>Dime tu nombre
+        <input type="text" name="nombre" id="nombre">
+    </p>
+    <h2 id="saludo"></h2>
+
+
+    <button onclick="saludar()">Saludar</button>
+
+    <script>
+        let titulo = "Bienvenidos a Javascript"
+        document.getElementById("principal").innerHTML = titulo;
+
+        function saludar() {
+            document.getElementById("saludo").innerHTML = "Hola " + document.getElementById("nombre").value;
+        }
+
+    </script>
+</body>
+</html>
