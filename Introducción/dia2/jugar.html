@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Indica tu nombre: <input type="text" id="nombre" value="Jennifer"></p>
+    <p>Indica tu apellido: <input type="text" id="apellido" value="López"></p>
+    <p>Indica tu edad: <input type="number" id="edad" value="30"></p>
+    <button onclick="operaciones()">Resultado</button>
+    <p id="nombreCompleto"></p>
+    <p id="edadFutura"></p>
+
+    <script>
+        "use strict";
+        function operaciones() {
+            //Declaro la variable nombre y asigno valor
+            let nombre = document.getElementById("nombre").value;
+
+            //Declaro variable apellido y asigno valor
+            let apellido = document.getElementById("apellido").value;
+
+            //Declaro la variable edad y asigno su valor pasando a tipo number ya que todo lo que viene de un documento html es texto.
+            let edad = Number(document.getElementById("edad").value);
+
+            //Declaro variable nombreCompleto y le asigno su valor
+            let nombreCompleto = document.getElementById("nombreCompleto").innerHTML = nombre + " " + apellido + " " + edad +" años";
+            //Declato variable edad futura y le asigno el valor de la variable edad + 5
+            let edadFutura = edad + 5;
+
+            document.getElementById("edadFutura").innerHTML = "En cinco años trendrá " + edadFutura +" años"
+
+            console.log(typeof(edad))
+            
+        }
+    </script>
+</body>
+</html>
