@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu pintura</title>
+    <style>
+        .div{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 1rem;
+        }
+        .div div{
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcula cuantos litros necesitas para tu pared</h1>
+    <div class="div">
+        <div>
+            <label for="ancho">Ancho</label>
+            <input type="number" id="ancho">
+        </div>
+        <div>
+            <label for="alto">Alto</label>
+            <input type="number" id="alto">
+        </div>
+    </div>
+    <button onclick="calculaPintura1()">1 capa</button>
+    <button onclick="calculaPintura2()">2 capas</button>
+    <button onclick="calculaPintura3()">3 capas</button>
+    <p id="resultado"></p>
+    <script>
+        function calculaPintura1(){
+        //Recogemos los valores
+        let ancho = Number(document.getElementById("ancho").value);
+        let alto = Number(document.getElementById("alto").value);
+        let area = ancho * alto;
+        console.log(area);
+        //Calculamos los litros de pintura
+        let litroPintura = 12;
+        const COBERTURA = Math.round(area / litroPintura) ;
+        document.getElementById("resultado").innerHTML = "Necesitas " + COBERTURA + " litros de pintura";
+        }
+
+        function calculaPintura2() {
+        let ancho = Number(document.getElementById("ancho").value);
+        let alto = Number(document.getElementById("alto").value);
+        let area = ancho * alto;
+        console.log(area);
+        //Calculamos los litros de pintura
+        let litroPintura = 12;
+        const COBERTURA = Math.round((area / litroPintura) * 2) ;
+        document.getElementById("resultado").innerHTML = "Necesitas " + COBERTURA + " litros de pintura";
+        }
+
+        function calculaPintura3() {
+        let ancho = Number(document.getElementById("ancho").value);
+        let alto = Number(document.getElementById("alto").value);
+        let area = ancho * alto;
+        console.log(area);
+        //Calculamos los litros de pintura
+        let litroPintura = 12;
+        const COBERTURA = Math.round((area / litroPintura) * 3) ;
+        document.getElementById("resultado").innerHTML = "Necesitas " + COBERTURA + " litros de pintura";
+        }
+        
+        
+    </script>
+</body>
+</html>

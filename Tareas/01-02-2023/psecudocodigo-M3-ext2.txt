@@ -1,0 +1,2 @@
+calcular el area de la pared
+calcular los litros de pintura en una capa

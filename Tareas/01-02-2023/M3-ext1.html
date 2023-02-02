@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potencias</title>
+</head>
+<body>
+    <h1>Calcular Potencias</h1>
+    <p>Escribe un número<input type="number" id="num"></p>
+    <button onclick="calculaCuadrado()">Calcula el doble</button>
+    <p id="resultadoCuadrado"></p>
+    <button onclick="calculaCubo()">Calcula el triple</button>
+    <p id="resultadoCubo"></p>
+
+    <script>
+    'use script'
+    
+    console.log(num);
+    function calculaCuadrado(){
+        let num = Number(document.getElementById("num").value);
+        console.log(num);
+        let cuadrado = num ** 2;
+        console.log(cuadrado);
+        document.getElementById("resultadoCuadrado").innerHTML = "El doble de " + num + " es " + cuadrado;
+    }
+    function calculaCubo(){
+        let num = Number(document.getElementById("num").value);
+        console.log(num);
+        let cubo = num ** 3;
+        console.log(cubo);
+        document.getElementById("resultadoCubo").innerHTML = "El triple de " + num + " es " + cubo;
+    }
+        
+        
+
+    </script>
+</body>
+</html>

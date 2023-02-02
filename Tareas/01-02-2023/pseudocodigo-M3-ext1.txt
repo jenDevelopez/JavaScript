@@ -1,0 +1,3 @@
+crear un input para coger un numerp
+crear un boton para calcular el doble y otro para calcular el triple con una funcion cada uno.
+imprimir en un parrafo el resultado

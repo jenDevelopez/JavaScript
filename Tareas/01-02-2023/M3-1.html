@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información | Datos personales</title>
+</head>
+<body>
+    <p id="nombre"></p>
+    <p id="apellido"></p>
+    <p id="edad"></p>
+    <script>
+        let nombre = prompt("Escriba su nombre");
+        console.log(nombre);
+        let apellido = prompt("Escriba su apellido");
+        console.log(apellido);
+        let edad = Number(prompt("Escribe tu edad"));
+        console.log(edad);
+        
+        let datos = alert("Tu nombre es " + nombre + " " + apellido + " y tu edad es " + edad);
+        console.log(datos);
+        document.getElementById("nombre").innerHTML = "Nombre: " + nombre;
+        document.getElementById("apellido").innerHTML = "Apellido: " + apellido;
+        document.getElementById("edad").innerHTML = "Edad: " + edad;
+    </script>
+</body>
+</html>

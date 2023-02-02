@@ -1,0 +1,5 @@
+Calculadora:
+
+1. Recoger valores con dos inputs de type number y convertirlo a tipo numérico
+2. Crear variables con cada operacion;
+3. Imprimir el resultado en cada párrafo;

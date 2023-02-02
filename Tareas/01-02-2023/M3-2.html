@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        button{
+            display: block;
+            padding: .25rem 1.5rem;
+        }
+        .inputs{
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <input type="number" id="num1" value="2">
+    <input type="number" id="num2" value="2">
+    <button onclick="calcular()">Calcular</button>
+    <p id="suma"></p>
+    <p id="resta"></p>
+    <p id="multiplicacion"></p>
+    <p id="division"></p>
+
+    <script>
+    
+        function calcular(){
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+
+        let suma = num1 + num2;
+        let resta = num1 - num2;
+        let multiplicacion = num1 * num2;
+        let division = num1 / num2;
+
+        
+        let resultado = "El resultado es "
+        document.getElementById("suma").innerHTML ="Suma: " + resultado + suma;
+        document.getElementById("resta").innerHTML ="Resta: " + resultado + resta;
+        document.getElementById("multiplicacion").innerHTML ="Multiplicación: " + resultado + multiplicacion;
+        
+        document.getElementById("division").innerHTML ="División: " + resultado + division;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logica de prigramación | Dia 2</title>
+    <title>Logica de programacion | Dia 3</title>
 </head>
 <body>
     <p>Indica tu nombre: <input type="text" id="nombre" value="Jennifer"></p>
     <p>Indica tu apellido: <input type="text" id="apellido" value="López"></p>
     <p>Indica tu edad: <input type="number" id="edad" value="30"></p>
     <button onclick="operaciones()">Resultado</button>
+    <button onclick="operaciones2()">Resultado con alert</button>
     <p id="nombreCompleto"></p>
     <p id="edadFutura"></p>
 
@@ -36,6 +37,17 @@
             console.log(typeof(edad))
             
         }
+
+        function operaciones2(){
+            let nombre = prompt("Indica tu nombre:");
+            let apellido = prompt ("Indica tu apellido");
+            let nombreCompleto = nombre + " " + apellido;
+            let edad = Number(prompt("Dime tu edad"));
+
+            alert(nombreCompleto);
+            alert("Tu edad dentro de 5 años tendras " + (edad + 5));
+        }
+        
     </script>
 </body>
 </html>
