@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beca de idiomas</title>
+</head>
+<body>
+    <h1>Solicita tu beca</h1>
+
+    <div>
+        <label for="edad">Escribe tu edad</label>
+        <input type="number" id="edad">
+    </div>
+    <div>
+        <label for="titulo">¿Tienes titulo universitario?</label>
+        <input type="text" id="titulo" placeholder="Escriba si o no">
+    </div>
+    <div>
+        <label for="paro">¿Estás en paro?</label>
+        <input type="text" id="paro" placeholder="Escriba si o no">
+    </div>
+
+    <button onclick="solicitaBeca()">Solicitar</button>
+    <p id="respuesta"></p>
+    <script>
+        function solicitaBeca(){
+            'use strict'
+            let edad = parseInt(document.getElementById("edad").value);
+            console.log(edad);
+            let titulo = document.getElementById("titulo").value;
+            console.log(titulo);
+            let paro = document.getElementById("paro").value;
+            console.log(paro);
+
+            let respuesta = document.getElementById("respuesta");
+            let respuestaP = "Felicidades, tu beca ha sido concedida";
+            let respuestaN = "Lamentablemente, tu beca ha sido denegada";
+
+
+            if(edad >= 18 && titulo == "si"){
+                respuesta.innerHTML = respuestaP;
+            }else if(edad >= 16 && paro == "si"){
+                respuesta.innerHTML = respuestaP;
+            }else{
+                respuesta.innerHTML= respuestaN;
+            }
+        }
+    </script>
+</body>
+</html>

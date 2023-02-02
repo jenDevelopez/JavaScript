@@ -1,0 +1,9 @@
+La escuela de idiomas asigna becas si cumple requisitos
+mayor de edad
+titulo universitario
+estar en paro
+Recoger la edad
+preguntar si tiene titulo universitario
+preguntar si esta en paro
+
+hacer una condicional en que si cumple estos requisitos se le concede la beca, de lo contrario no se le concede

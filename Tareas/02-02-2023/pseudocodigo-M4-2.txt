@@ -1,0 +1,3 @@
+Solicitar la edad del usuario
+guardar la informacion en una variable
+escribir una condicional multiple y escribir una respuesta para cada condicion

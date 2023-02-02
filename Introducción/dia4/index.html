@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional if</title>
+</head>
+<body>
+    <p>Queremos obtener los datos de una persona(nombre, edad y sexo)</p>
+    <p>Dependiendo del sexo saludaremos de la siguiente manera Hola don + nombre; Hola Doña + nombre</p>
+    <p>Escribe tu nombre : <input type="text" id="nombre"></p>
+    <p>Indica tu edad<input type="text" id="edad"></p>
+    <p>Indica tu género<input type="text" name="" id="genero" placeholder="f para femenino/ m para masculino"></p>
+    <button onclick="saludar1()">saludo if</button>
+    <button onclick="saludar3()">saludo else if</button>
+    <button onclick="saludar2()">Genera saludo</button>
+    
+    <script>
+        function saludar1(){
+            let nombre = document.getElementById("nombre").value;
+            console.log(nombre)
+            let edad = parseInt(document.getElementById("edad").value);
+            console.log(edad);
+            let genero = document.getElementById("genero").value;
+
+            if(genero == "f" || genero == "F"){
+                alert("Hola Doña " + nombre)
+                console.log(genero);
+            }   
+            if(genero == "m" || genero == "M"){
+                alert("Hola Don " + nombre)
+                console.log(genero);
+            }
+            if(genero != "f" && genero != "F" && genero != "m" && genero != "M"){
+                alert("error: Escribe f o m en género")
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>

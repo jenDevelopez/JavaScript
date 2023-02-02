@@ -33,6 +33,12 @@
     <button onclick="calculaPintura3()">3 capas</button>
     <p id="resultado"></p>
     <script>
+        //Al poner las variables en ámbito global el valor me sale 0, por lo tanto he optado por ponerlas en ámbito local
+
+        // let ancho = Number(document.getElementById("ancho").value);
+        // let alto = Number(document.getElementById("alto").value);
+        // let area = ancho * alto;
+
         function calculaPintura1(){
         //Recogemos los valores
         let ancho = Number(document.getElementById("ancho").value);

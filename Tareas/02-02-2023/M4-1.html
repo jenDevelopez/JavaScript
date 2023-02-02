@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿Eres mayor de edad?</h1>
+    <p id="nombre"></p>
+    <p id="apellido"></p>
+    <p id="edad"></p>
+    <p id="mayorEdad"></p>
+    <script>
+        let nombre = prompt("Escriba su nombre");
+        console.log(nombre);
+        let apellido = prompt("Escriba su apellido");
+        console.log(apellido);
+        let edad = Number(prompt("Escribe tu edad"));
+        console.log(edad);
+        
+        if(edad >= 18){
+            document.getElementById("mayorEdad").innerHTML = nombre + " " + apellido + " eres mayor de edad" 
+        }else{
+            document.getElementById("mayorEdad").innerHTML = nombre + " " + apellido + " eres menor de edad"
+        }
+    </script>
+</body>
+</html>
